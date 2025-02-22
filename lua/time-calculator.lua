@@ -58,7 +58,7 @@ local set_node_text = function(node, text)
 	)
 end
 
-local calculate_time = function()
+M.calculate_time = function()
 	local parsed = vim.treesitter.query.parse(
 		'markdown',
 		[[
@@ -147,7 +147,7 @@ M.setup = function(opts)
 		vim.keymap.set(
 			options.mode,
 			options.keymap,
-			calculate_time,
+			M.calculate_time,
 			{ desc = options.desc }
 		)
 	end
