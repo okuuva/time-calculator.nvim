@@ -45,6 +45,14 @@ require('time-calculator').setup({
 })
 ```
 
+**Programmatic use:**
+
+```lua
+require('time-calculator').calculate_time()
+```
+
+Use it to e.g. set a custom keybinding with [`which-key.nvim`](https://github.com/folke/which-key.nvim) or [`lazy.nvim`](https://lazy.folke.io/).
+
 ---
 
 Use this plugin only for its intended purpose!
